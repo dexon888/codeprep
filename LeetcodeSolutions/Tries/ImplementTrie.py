@@ -12,7 +12,7 @@ class Trie(object):
         curr = self.root
         for c in word:
             if c not in curr.children:
-                curr[c] = TrieNode
+                curr.children[c] = TrieNode
             curr = curr.children[c]
         curr.endOfWord = True
 
